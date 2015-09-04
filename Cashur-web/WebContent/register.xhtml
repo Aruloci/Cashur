@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+	<ui:include src="head.xhtml" />
+	<title>Cashur | Register</title>
+</head>
+<h:body>
+<form class="form-horizontal registerbox">
+  <fieldset>
+    <legend>Register</legend>
+    <div class="form-group">
+      <div class="col-lg-10" style="width: 100%;">
+      	<label for="inputName" class="control-label">Firstname</label>
+        <h:inputText class="form-control" id="inputName" placeholder=""></h:inputText>
+      </div>
+      <div class="col-lg-10" style="width: 100%;">
+      	<label for="inputFirstName" class="control-label">Firstname</label>
+        <h:inputText class="form-control" id="inputFirstName" placeholder=""></h:inputText>
+      </div>
+      <div class="col-lg-10" style="width: 100%;">
+      	<label for="inputEmail" class="control-label">E-Mail</label>
+        <h:inputText class="form-control" id="inputEmail" placeholder=""></h:inputText>
+      </div>
+      <div class="col-lg-10" style="width: 100%;">
+      	<label for="inputPassword" class="control-label">Password</label>
+        <h:inputSecret class="form-control" id="inputPassword" placeholder=""></h:inputSecret>
+      </div>
+      <div class="col-lg-10" style="width: 100%;">
+      	<label for="inputPasswordConfirm" class="control-label">Confirm Password</label>
+        <h:inputSecret class="form-control" id="inputPasswordConfirm" placeholder=""></h:inputSecret>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-10" style="width: 100%;">
+        <button type="submit" class="btn btn-primary center" style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</h:body>
+</html>
