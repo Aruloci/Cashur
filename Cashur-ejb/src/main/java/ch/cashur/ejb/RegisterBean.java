@@ -4,6 +4,8 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import ch.cashur.model.User;
+
 @Stateless
 public class RegisterBean implements RegisterBeanLocal {
 
@@ -18,7 +20,8 @@ public class RegisterBean implements RegisterBeanLocal {
     }
 
 	@Override
-	public String registerCustomer(String firstname, String surname, String username, String password) {
-		return null;		
+	public String registerCustomer(User user) {
+		em.persist(user);
+		return null;
 	}
 }

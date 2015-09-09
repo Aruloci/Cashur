@@ -2,8 +2,10 @@ package ch.cashur.ejb;
 
 import javax.ejb.Local;
 
+import ch.cashur.model.User;
+
 @Local
 public interface RegisterBeanLocal {
 
-	public String registerCustomer(String firstname, String surname,String username, String password);
+	public String registerCustomer(User user);
 }
