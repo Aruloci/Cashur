@@ -4,42 +4,44 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
-<head>
+<h:head>
 	<ui:include src="head.xhtml" />
 	<title>Cashur | Register</title>
-</head>
+</h:head>
 <h:body>
-<form class="form-horizontal registerbox">
+<div class="form-horizontal registerbox">
+<h:form>
   <fieldset>
     <legend>Register</legend>
     <div class="form-group">
       <div class="col-lg-10" style="width: 100%;">
-      	<label for="inputName" class="control-label">Firstname</label>
-        <h:inputText class="form-control" id="inputName" placeholder=""></h:inputText>
+      	<label for="inputName" class="control-label">Surname</label>
+        <h:inputText value="#{registerController.surName}" class="form-control" id="inputName" ></h:inputText>
       </div>
       <div class="col-lg-10" style="width: 100%;">
       	<label for="inputFirstName" class="control-label">Firstname</label>
-        <h:inputText class="form-control" id="inputFirstName" placeholder=""></h:inputText>
+        <h:inputText value="#{registerController.firstName}" class="form-control" id="inputFirstName" ></h:inputText>
       </div>
       <div class="col-lg-10" style="width: 100%;">
       	<label for="inputEmail" class="control-label">E-Mail</label>
-        <h:inputText class="form-control" id="inputEmail" placeholder=""></h:inputText>
+        <h:inputText value="#{registerController.email}" class="form-control" id="inputEmail" ></h:inputText>
       </div>
       <div class="col-lg-10" style="width: 100%;">
       	<label for="inputPassword" class="control-label">Password</label>
-        <h:inputSecret class="form-control" id="inputPassword" placeholder=""></h:inputSecret>
+        <h:inputSecret value="#{registerController.password}" class="form-control" id="inputPassword" ></h:inputSecret>
       </div>
       <div class="col-lg-10" style="width: 100%;">
       	<label for="inputPasswordConfirm" class="control-label">Confirm Password</label>
-        <h:inputSecret class="form-control" id="inputPasswordConfirm" placeholder=""></h:inputSecret>
+        <h:inputSecret class="form-control" id="inputPasswordConfirm" ></h:inputSecret>
       </div>
     </div>
     <div class="form-group">
       <div class="col-lg-10" style="width: 100%;">
-        <button type="submit" class="btn btn-primary center" style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;">Submit</button>
+        <h:commandButton action="#{registerController.registerCustomer}" class="btn btn-primary center" value="Submit" style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;"></h:commandButton>
       </div>
     </div>
   </fieldset>
-</form>
+</h:form>
+</div>
 </h:body>
 </html>
