@@ -1,0 +1,800 @@
+!SESSION 2015-09-10 07:58:24.723 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_CH
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-10 07:58:42.803
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-10 07:59:32.894 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_CH
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\workspace\Cashur -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-10 07:59:38.604
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:00:24.115
+!MESSAGE CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:00:24.123
+!MESSAGE CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:00:26.449
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:00:26.453
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2015-09-10 08:01:47.996 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_CH
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/workspace/Cashur/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-10 08:01:58.507
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:09.991
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:10.001
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:10.008
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:20.233
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:20.237
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:28.431
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:28.436
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:40.341
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:02:40.345
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:03:59.217
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:03:59.222
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:05:04.080
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:11:46.671
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:11:46.675
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:13:21.181
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:19:28.591
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:19:28.597
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:25:47.704
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:27:50.188
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:27:50.192
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:28:02.374
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:28:34.350
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:28:34.355
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:29:17.815
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:30:05.102
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:30:05.108
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:30:08.960
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:30:08.968
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:30:12.948
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:40:52.321
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:40:52.326
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:41:00.628
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:41:00.632
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:41:14.952
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:41:15.973
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:41:15.982
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:41:25.586
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:41:31.711
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:41:32.345
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:41:32.348
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:48:34.396
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:48:34.441
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:48:34.445
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:48:41.083
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:48:47.226
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:48:48.027
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:48:48.031
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:49:09.898
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:49:09.904
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:00.306
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:00.310
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:00.317
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:10.547
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:10.552
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:50:10.560
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:50:28.298
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:50:28.350
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:50:28.354
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:50:36.997
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:50:47.650
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:53:27.140
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:53:27.144
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:53:38.114
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:53:38.122
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:53:50.801
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:12.543
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:12.550
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:22.777
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:22.781
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:33.299
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:33.302
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:40.707
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:40.711
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:46.862
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:54:46.869
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:54:51.080
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:54:51.658
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:54:51.662
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:24.131
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:24.136
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:30.943
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:30.951
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:33.720
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:33.724
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:48.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:48.229
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:49.301
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:55:49.309
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:55:55.628
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:55:55.671
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:55:55.675
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Application with name [Cashur-web] is not deployed
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:55:59.534
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:56:02.370
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:56:39.863
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:56:39.870
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:56:46.698
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:56:46.704
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:56:51.601
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:56:52.142
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 08:56:52.146
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:57:02.473
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:57:02.478
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 08:57:04.506
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:57:09.045
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:59:26.712
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 08:59:26.720
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 08:59:37.862
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:01:44.053
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:01:44.058
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:01:50.259
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:01:50.263
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 09:01:55.859
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:01:56.500
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 09:01:56.504
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:02:36.146
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-09-10 09:02:36.150
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:02:40.461
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 09:02:47.035
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:02:47.727
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 09:02:47.731
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:04:39.496
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 09:04:41.883
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-web
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:04:42.492
+!MESSAGE GlassFish: deploy is failing=
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2015-09-10 09:04:42.496
+!MESSAGE cannot Deploy Cashur-web
+!STACK 0
+java.lang.Exception: deploy is failing=Error occurred during deployment: Exception while loading the app : java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: java.lang.RuntimeException: java.lang.NoClassDefFoundError: Lch/cashur/ejb/RegisterBeanLocal;. Please see server.log for more details.
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:613)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2015-09-10 09:04:54.076
+!MESSAGE GlassFish: Undeploy is failing=
+!STACK 0
+java.lang.Exception: undeploy is failing=Application Cashur-web is not deployed on this target [server]
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.undeploy(GlassfishServerBehaviourDelegate.java:460)
+	at oracle.eclipse.tools.glassfish.GlassfishServerBehaviourDelegate.publishDeployedDirectory(GlassfishServerBehaviourDelegate.java:520)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModuleForGlassFishV3(GlassfishV4ServerBehavior.java:96)
+	at oracle.eclipse.tools.glassfish.GlassfishV4ServerBehavior.publishModule(GlassfishV4ServerBehavior.java:56)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1091)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1183)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:987)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3157)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:345)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY oracle.eclipse.tools.glassfish 1 1 2015-09-10 09:05:23.651
+!MESSAGE GlassFish: Deploy direcotry C:\glassfish4\glassfish\domains\domain1\eclipseApps\Cashur-EAR

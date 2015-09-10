@@ -1,13 +1,11 @@
 package ch.cashur.ejb;
 
-import javax.annotation.ManagedBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import ch.cashur.model.User;
 
-@ManagedBean
 @Stateless
 public class RegisterBean implements RegisterBeanLocal {
 
@@ -25,7 +23,6 @@ public class RegisterBean implements RegisterBeanLocal {
 	 * Default constructor.
 	 */
 	public RegisterBean() {
-		super();
 	}
 
 	@Override

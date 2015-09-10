@@ -1,0 +1,71 @@
+package ch.cashur.web.controllers;
+import java.io.Serializable;
+
+import javax.ejb.EJB;
+import javax.enterprise.context.RequestScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+import javax.inject.Named;
+
+import ch.cashur.ejb.RegisterBean;
+import ch.cashur.ejb.RegisterBeanLocal;
+
+@Named
+@RequestScoped
+public class RegisterController implements Serializable {
+	private static final long serialVersionUID = 1L;
+	private String firstName;
+	private String surName;
+	private String email;
+	private String password;
+
+	@EJB
+	private RegisterBeanLocal registerBeanLocal;
+
+	public String registerCustomer() {
+		String msg = registerBeanLocal.registerCustomer(firstName, surName, email, password);
+		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(msg));
+		System.out.println("NATI");
+		return "register";
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getSurName() {
+		return surName;
+	}
+
+	public void setSurName(String surName) {
+		this.surName = surName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public RegisterBeanLocal getRegisterBeanLocal() {
+		return registerBeanLocal;
+	}
+
+	public void setRegisterBeanLocal(RegisterBeanLocal registerBeanLocal) {
+		this.registerBeanLocal = registerBeanLocal;
+	}
+}

@@ -1,0 +1,4 @@
+#GlassFish 3
+#Thu Sep 10 09:05:26 CEST 2015
+org.eclipse.jst.jee.server\:Cashur-web=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Cashur-web
+org.eclipse.jst.jee.server\:Cashur-EAR=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\Cashur-EAR
