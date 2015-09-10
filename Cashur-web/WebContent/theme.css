@@ -59,3 +59,41 @@
 	padding: 19px;
 	border: 1px solid #e7e7e7; 
 }
+
+.theme-input {
+	color: #1fad5c;
+}
+
+.navbar-default .dropdown-menu {
+	background-color: #f5f5f5;
+	color: black;
+}
+
+.dropdown-menu .divider {
+	background-color: #bdbdbd !important;
+}
+
+.panel-default {
+	margin: 0 25%;
+}
+
+@media screen and (min-width: 900px) {
+    .panel-default {
+        margin: 0 35%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .panel-default {
+        margin: 0 6%;
+    }
+}
+
+.theme-hr {
+	margin: 25px 25%;
+}
+
+.center {
+	font-weight: bold;
+	text-transform: uppercase;
+}

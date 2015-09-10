@@ -28,11 +28,22 @@
 
     <div class="collapse navbar-collapse theme-hover" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#" style="color: #1fad5c;">Expenses</a></li>
+      	<li class="dropdown">
+      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #1fad5c;"><span class="glyphicon glyphicon-usd"></span> Expenses<span class="caret"></span></a>
+      		<ul class="dropdown-menu">
+      			<li><a href="myExpenses.jsf" style="color: #1fad5c;">My Expenses</a></li>
+      			<li class="divider"></li>
+      			<li><a href="newExpense.jsf" style="color: #1fad5c;">New Expense</a></li>
+      			<li><a href="newCategory.jsf" style="color: #1fad5c;">New Category</a></li>
+      		</ul>
+      	</li>
+        
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #1fad5c;">Profile <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #1fad5c;"><span class="glyphicon glyphicon-user"></span> Profile<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#" style="color: #1fad5c;">Login</a></li>
+         	<li><a href="myProfile.jsf" style="color: #1fad5c;">My Profile</a></li>
+      		<li class="divider"></li>
+            <li><a href="login.jsf" style="color: #1fad5c;">Login</a></li>
             <li><a href="register.jsf" style="color: #1fad5c;">Register</a></li>
           </ul>
         </li>
