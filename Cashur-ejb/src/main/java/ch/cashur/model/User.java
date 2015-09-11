@@ -3,8 +3,10 @@ package ch.cashur.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
 public class User {
 	
 	@Id

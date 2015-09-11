@@ -16,6 +16,7 @@ public class RegisterBean implements RegisterBeanLocal {
 	private String surName;
 	private String email;
 	private String password;
+	private String confirm;
 	
 	private User user = new User();
 
@@ -34,6 +35,8 @@ public class RegisterBean implements RegisterBeanLocal {
 		user.setEmail(email);
 		user.setPassword(password);
 
+		System.out.println("RegisterBean >> registerCustomer");
+		
 		em.persist(user);
 		return "User successfully registered";
 	}
@@ -46,8 +49,16 @@ public class RegisterBean implements RegisterBeanLocal {
 	
 	@Override
 	public boolean checkPassword(String password, String confirm) {
-		// check if the 2 passwords are equal
-		return false;
+		boolean equal = true;
+		System.out.println("RegisterBean >> checkPassword");
+		if(password.equals(confirm)) {
+			System.out.println("RegisterBean >> Password is equal");
+			equal = true;
+		} else {
+			System.out.println("RegisterBean >> Password is unequal");
+			equal = false;
+		}
+		return equal;
 	}
 
 	public User getUser() {
@@ -89,4 +100,12 @@ public class RegisterBean implements RegisterBeanLocal {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getConfirm() {
+		return confirm;
+	}
+
+	public void setConfirm(String confirm) {
+		this.confirm = confirm;
+	}	
 }

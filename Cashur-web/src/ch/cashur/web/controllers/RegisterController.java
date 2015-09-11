@@ -3,9 +3,7 @@ import java.io.Serializable;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
-import javax.faces.context.FacesContext;
 
 import ch.cashur.ejb.RegisterBeanLocal;
 
@@ -17,15 +15,20 @@ public class RegisterController implements Serializable {
 	private String surName;
 	private String email;
 	private String password;
+	private String confirm;
+	boolean registered = false;
 
 	@EJB
 	private RegisterBeanLocal registerBeanLocal;
 
-	public String registerCustomer() {
-		String msg = registerBeanLocal.registerCustomer(firstName, surName, email, password);
-		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(msg));
-		System.out.println("NATI");
-		return "register";
+	public boolean registerCustomer() {
+		if(registerBeanLocal.checkPassword(password, confirm)) {
+			registerBeanLocal.registerCustomer(firstName, surName, email, password);
+		} else {
+			System.out.println("RegisterController >> Password does not match");
+			registered = false;
+		}
+		return registered;
 	}
 
 	public String getFirstName() {
@@ -58,5 +61,21 @@ public class RegisterController implements Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getConfirm() {
+		return confirm;
+	}
+
+	public void setConfirm(String confirm) {
+		this.confirm = confirm;
+	}
+
+	public boolean isRegistered() {
+		return registered;
+	}
+
+	public void setRegistered(boolean registered) {
+		this.registered = registered;
 	}
 }
