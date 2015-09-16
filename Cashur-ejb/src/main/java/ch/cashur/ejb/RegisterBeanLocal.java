@@ -12,7 +12,7 @@ public interface RegisterBeanLocal {
 	 * @param user
 	 * @return String
 	 */
-	public String registerCustomer(User user);
+	public void registerCustomer(User user);
 	
 	/**
 	 * Registers a user with the given values of the register field
@@ -22,7 +22,7 @@ public interface RegisterBeanLocal {
 	 * @param password
 	 * @return String
 	 */
-	public String registerCustomer(String firstname, String surname, String email, String password);
+	public void registerCustomer(String firstname, String surname, String email, String password);
 	
 	/**
 	 * Checks if the two passwords are equal

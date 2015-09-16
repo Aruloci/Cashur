@@ -4,6 +4,11 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="Cashur-ejb" transaction-type="JTA">
 		<jta-data-source>jdbc/__cashur</jta-data-source>
+		<class>ch.cashur.model.Category</class>
+		<class>ch.cashur.model.CategoryPK</class>
+		<class>ch.cashur.model.Expense</class>
+		<class>ch.cashur.model.ExpensePK</class>
+		<class>ch.cashur.model.User</class>
 	</persistence-unit>
 </persistence>
 

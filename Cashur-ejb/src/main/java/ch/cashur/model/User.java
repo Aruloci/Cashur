@@ -1,80 +1,108 @@
 package ch.cashur.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
+import java.io.Serializable;
+import javax.persistence.*;
+import java.util.List;
 
+
+/**
+ * The persistent class for the user database table.
+ * 
+ */
 @Entity
 @NamedQuery(name="User.findAll", query="SELECT u FROM User u")
-public class User {
-	
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+
 	@Id
-	@Column(name = "ID_User")
-	private int idUser;
-	
-	@Column(name = "firstname")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int ID_User;
+
+	private String currency;
+
+	private String email;
+
 	private String firstname;
 
-	@Column(name = "surname")
-	private String surname;
-	
-	@Column(name = "email")
-	private String email;
-	
-	@Column(name = "password")
 	private String password;
-	
-	@Column(name = "currency")
-	private String currency;
-	
-	// Getters and setters
-	
-	public int getIdUser() {
-		return idUser;
+
+	private String surname;
+
+	//bi-directional many-to-one association to Category
+	@OneToMany(mappedBy="user")
+	private List<Category> categories;
+
+	public User() {
 	}
-	
-	public void setIdUser(int idUser) {
-		this.idUser = idUser;
+
+	public int getID_User() {
+		return this.ID_User;
 	}
-	
-	public String getFirstname() {
-		return firstname;
+
+	public void setID_User(int ID_User) {
+		this.ID_User = ID_User;
 	}
-	
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-	
-	public String getSurname() {
-		return surname;
-	}
-	
-	public void setSurname(String surname) {
-		this.surname = surname;
-	}
-	
-	public String getEmail() {
-		return email;
-	}
-	
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-	public String getPassword() {
-		return password;
-	}
-	
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
+
 	public String getCurrency() {
-		return currency;
+		return this.currency;
 	}
-	
+
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFirstname() {
+		return this.firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getSurname() {
+		return this.surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	public List<Category> getCategories() {
+		return this.categories;
+	}
+
+	public void setCategories(List<Category> categories) {
+		this.categories = categories;
+	}
+
+	public Category addCategory(Category category) {
+		getCategories().add(category);
+		category.setUser(this);
+
+		return category;
+	}
+
+	public Category removeCategory(Category category) {
+		getCategories().remove(category);
+		category.setUser(null);
+
+		return category;
+	}
+
 }

@@ -27,7 +27,7 @@ public class RegisterBean implements RegisterBeanLocal {
 	}
 
 	@Override
-	public String registerCustomer(String firstname, String surname, String email, String password) {
+	public void registerCustomer(String firstname, String surname, String email, String password) {
 
 		user.setCurrency("CHF");
 		user.setFirstname(firstname);
@@ -38,13 +38,11 @@ public class RegisterBean implements RegisterBeanLocal {
 		System.out.println("RegisterBean >> registerCustomer");
 		
 		em.persist(user);
-		return "User successfully registered";
 	}
 	
 	@Override
-	public String registerCustomer(User user) {
+	public void registerCustomer(User user) {
 		em.persist(user);
-		return null;
 	}
 	
 	@Override
