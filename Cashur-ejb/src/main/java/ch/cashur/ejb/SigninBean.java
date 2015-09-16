@@ -45,6 +45,10 @@ public class SigninBean implements SigninBeanLocal {
 					
 			        session.setAttribute("user", user);
 			        session.setAttribute("isLoggedIn", true);
+			        
+			        if (session.getAttribute("isLoggedIn") != null) {
+			        	System.out.println("isLoggedIn = " + session.getAttribute("isLoggedIn"));
+			        };
 					return;
 				} else {
 					System.out.println("Passwort ist inkorrekt");

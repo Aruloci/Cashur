@@ -21,7 +21,7 @@
 					<div class="form-group">
 						<div class="col-lg-10" style="width: 100%;">
 							<label for="currentMail" class="control-label">Current E-Mail</label>
-							<input class="form-control theme-input" id="currentMail" value="TODO@current.com" disabled=""></input>
+							<input class="form-control theme-input" id="currentMail" value="#{sessionScope.user.email}" disabled=""></input>
 							
 							<label for="newEmail" class="control-label">New E-Mail</label>
 							<h:inputText type="email" class="form-control theme-input" id="newEmail"></h:inputText>
