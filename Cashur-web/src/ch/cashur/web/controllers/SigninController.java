@@ -18,7 +18,7 @@ public class SigninController implements Serializable {
 	private SigninBeanLocal signinBeanLocal;
 
 	public void signinCustomer() {
-		System.out.println("SigninController >> singinCustomer");
+		System.out.println("SigninController >> signinCustomer");
 		signinBeanLocal.signinCustomer(email, password);
 	}
 

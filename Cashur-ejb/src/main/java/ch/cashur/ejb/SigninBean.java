@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.servlet.http.HttpSession;
 
 import ch.cashur.model.User;
 
@@ -22,6 +24,9 @@ public class SigninBean implements SigninBeanLocal {
 
 	private User user = new User();
 
+	private FacesContext facesContext = FacesContext.getCurrentInstance();
+    private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
+    
 	public SigninBean() {
 
 	}
@@ -37,10 +42,13 @@ public class SigninBean implements SigninBeanLocal {
 				System.out.println("LoginBean >> loginCustomer: User ist vorhanden");
 				if (user.getPassword().equals(password)) {
 					System.out.println("Passwort ist richtig");
-					break;
+					
+			        session.setAttribute("user", user);
+			        session.setAttribute("isLoggedIn", true);
+					return;
 				} else {
 					System.out.println("Passwort ist inkorrekt");
-					break;
+					return;
 				}
 			} else {
 				System.out.println("LoginBean >> loginCustomer: User ist nicht vorhanden");

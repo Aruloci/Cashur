@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
    <link type="text/css" rel="stylesheet" href="webjars/bootswatch-yeti/3.3.2/css/bootstrap.min.css"/>
@@ -27,6 +28,7 @@
 
     <div class="collapse navbar-collapse theme-hover" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+      	<c:if test="${session.getAttribute('isLoggedIn') != false}">
       	<li class="dropdown">
       		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #1fad5c;"><span class="glyphicon glyphicon-usd"></span> Expenses<span class="caret"></span></a>
       		<ul class="dropdown-menu">
@@ -36,6 +38,7 @@
       			<li><a href="newCategory.jsf" style="color: #1fad5c;">New Category</a></li>
       		</ul>
       	</li>
+      	</c:if>
         
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: #1fad5c;"><span class="glyphicon glyphicon-user"></span> Profile<span class="caret"></span></a>
