@@ -107,17 +107,26 @@
 	text-align: center;
 }
 
-.banner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    height: 200px;
-    z-index: -1;
-    
-    /*test values*/
-    background: cyan;
+.commandToA a {
+	padding: 12px 15px;
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    clear: both;
+    line-height: 1.4;
+    white-space: nowrap;
+    color: #1fad5c !important;
+}
+
+.commandToA :hover a {
+	background-color: #eeeeee;
+	text-decoration: inherit;
+}
+@media (max-width: 767px) {
+	.commandToA a {
+    	line-height: 21px;
+   	    padding: 5px 15px 5px 25px;
+    }
 }
 /*============================ CHART ============================*/
 .chart {
