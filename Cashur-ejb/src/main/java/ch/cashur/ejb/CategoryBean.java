@@ -53,9 +53,15 @@ public class CategoryBean implements CategoryBeanLocal {
 	@Override
 	public List<Category> getAllCategories(User user) {
 		List<Category> categories = new ArrayList<Category>();
+		List<Category> result = new ArrayList<Category>();
 		categories = em.createNamedQuery("Category.findAll", Category.class).getResultList();
 		
-		return categories;
+		for (Category cat : categories) {
+			if (cat.getUser().getID_User() == user.getID_User()) {
+				result.add(cat);
+			}
+		}
+		return result;
 	}
 	
 	private boolean isAlreadyExisting(List<Category> categories, Category newCat, User user) {

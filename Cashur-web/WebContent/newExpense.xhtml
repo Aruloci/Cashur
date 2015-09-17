@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
 <ui:include src="head.xhtml" />
@@ -17,9 +18,9 @@
 				<div class="col-lg-10" style="width: 100%;">
 					<label for="categorySelect" class="control-label">Category</label>
 					<h:selectOneMenu value="#{expenseController.category}" class="form-control theme-input" id="categorySelect">
-						<f:selectItem itemValue="Food" itemLabel="Food" />
-						<f:selectItem itemValue="Sport" itemLabel="Sport" />
-						<f:selectItem itemValue="Pets" itemLabel="Pets" />
+						<c:forEach items="#{categoryController.getAllCategories()}" var="category">
+							<f:selectItem itemValue="#{category}" itemLabel="#{category}" />
+						</c:forEach>
 					</h:selectOneMenu>
 				</div>
 

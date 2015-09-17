@@ -1,5 +1,7 @@
 package ch.cashur.web.controllers;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.ejb.EJB;
 import javax.enterprise.context.RequestScoped;
@@ -16,8 +18,8 @@ import ch.cashur.model.User;
 public class CategoryController implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private String category;
-
+	private String category;	
+	
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
     
@@ -30,11 +32,15 @@ public class CategoryController implements Serializable {
 		
 		categoryBeanLocal.addCategory(cat);
 	}
-	
-	public void getAllCategories() {
-		categoryBeanLocal.getAllCategories((User) session.getAttribute("user"));
-	}
 
+	public List<String> getAllCategories() {
+		List<String> strings = new ArrayList<String>();
+		for(Category c : categoryBeanLocal.getAllCategories((User) session.getAttribute("user"))) {
+			strings.add(c.getCategory());
+		}
+		return strings;
+	}
+	
 	/* GETTERS and SETTERS */
 	public String getCategory() {
 		return category;
