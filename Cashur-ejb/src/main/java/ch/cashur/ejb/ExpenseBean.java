@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 
 import ch.cashur.model.Category;
 import ch.cashur.model.Expense;
-import ch.cashur.model.User;
 
 @Stateless
 public class ExpenseBean implements ExpenseBeanLocal {
@@ -47,5 +46,4 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	public void addExpense(Expense expense) {
 		em.persist(expense);
 	}
-
 }

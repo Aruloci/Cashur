@@ -2,7 +2,6 @@ package ch.cashur.ejb;
 
 import javax.ejb.Local;
 
-import ch.cashur.model.Category;
 import ch.cashur.model.Expense;
 
 @Local
