@@ -17,7 +17,5 @@ public class LogoutController implements Serializable{
 	public void logoutCustomer() {
 		session.setAttribute("isLoggedIn", false);
 		session.setAttribute("User", null);
-		
-		System.out.println(session.getAttribute("isLoggedIn"));
 	}
 }

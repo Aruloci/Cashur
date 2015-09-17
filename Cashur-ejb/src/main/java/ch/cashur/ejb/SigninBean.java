@@ -22,8 +22,6 @@ public class SigninBean implements SigninBeanLocal {
 	private String email;
 	private String password;
 
-	private User user = new User();
-
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
     

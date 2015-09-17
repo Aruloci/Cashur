@@ -1,5 +1,8 @@
 package ch.cashur.ejb;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.ejb.Stateless;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
@@ -21,7 +24,14 @@ public class CategoryBean implements CategoryBeanLocal {
 	@Override
 	public void addCategory(Category category, User user) {
 		category.setUser(user);
-		em.persist(category);
+		
+		if (!isAlreadyExisting(this.getAllCategories(user), category)) {
+			em.persist(category);
+			System.out.println("Category '" + category.getCategory() + "' added!");
+		} else {
+			//TODO
+			System.out.println("Kategorie vorhanden!");
+		}
 	}
 
 	@Override
@@ -38,5 +48,22 @@ public class CategoryBean implements CategoryBeanLocal {
 	public void addCategory(Category category) {
 		User user = (User) session.getAttribute("user");
 		this.addCategory(category, user);
+	}
+
+	@Override
+	public List<Category> getAllCategories(User user) {
+		List<Category> categories = new ArrayList<Category>();
+		categories = em.createNamedQuery("Category.findAll", Category.class).getResultList();
+		
+		return categories;
+	}
+	
+	private boolean isAlreadyExisting(List<Category> categories, Category newCat) {
+		for (Category cat : categories) {
+			if (cat.getCategory().toLowerCase().equals(newCat.getCategory().toLowerCase())) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

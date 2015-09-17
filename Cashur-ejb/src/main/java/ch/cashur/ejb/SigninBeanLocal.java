@@ -2,8 +2,6 @@ package ch.cashur.ejb;
 
 import javax.ejb.Local;
 
-import ch.cashur.model.User;
-
 @Local
 public interface SigninBeanLocal {
 

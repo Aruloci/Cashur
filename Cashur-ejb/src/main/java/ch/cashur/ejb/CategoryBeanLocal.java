@@ -1,5 +1,7 @@
 package ch.cashur.ejb;
 
+import java.util.List;
+
 import javax.ejb.Local;
 
 import ch.cashur.model.Category;
@@ -27,4 +29,6 @@ public interface CategoryBeanLocal {
 	 * @param category
 	 */
 	public void addCategory(Category category);
+	
+	public List<Category> getAllCategories(User user);
 }
