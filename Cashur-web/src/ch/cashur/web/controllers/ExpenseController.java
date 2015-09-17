@@ -20,10 +20,6 @@ public class ExpenseController implements Serializable {
 	private String value = "";
 	
 	public void addExpense() {
-		System.out.println("ExpenseController >> addExpense");
-		System.out.println("Category: " + category);
-		System.out.println("Value: " + value);
-		
 		expense.addExpense(category, value);
 	}
 
@@ -42,7 +38,4 @@ public class ExpenseController implements Serializable {
 	public void setValue(String value) {
 		this.value = value;
 	}
-	
-	
-	
 }

@@ -29,31 +29,18 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		
 		Category cat = new Category();
 		Expense expense = new Expense();
-		User user = (User) session.getAttribute("user");
 		
 		for(Category c : categoryList) {
-			System.out.println("Categories: " + c.getCategory());
 			if(c.getCategory().equals(categoryName)) {
-				cat.setCategory(categoryName);
-				cat.setId(c.getId());
-				cat.setUser(user);
-				System.out.println("Kategorie gefunden");
-			} else {
-				System.out.println("Kategorie nicht gefunden");
+				cat = c;
 			}
 		}
 		expense.setWert(value);
 		expense.setCategory(cat);
 		expense.setDate("Jetzt");
 		
-		System.out.println("Wert: " + expense.getWert());
-		System.out.println("Category: " + expense.getCategory().getCategory());
-		System.out.println("Date: " + expense.getDate());
-		System.out.println("Email: " + user.getEmail());
-	
-		
 		System.out.println("ExpenseBean >> Persist expense");
-		em.persist(expense);
+		this.addExpense(expense);
 	}
 
 	@Override
