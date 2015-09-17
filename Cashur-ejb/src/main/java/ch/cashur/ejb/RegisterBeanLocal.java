@@ -10,7 +10,6 @@ public interface RegisterBeanLocal {
 	/**
 	 * Registers a user with the given User-object
 	 * @param user
-	 * @return String
 	 */
 	public void registerCustomer(User user);
 	
@@ -20,7 +19,6 @@ public interface RegisterBeanLocal {
 	 * @param surname
 	 * @param email
 	 * @param password
-	 * @return String
 	 */
 	public void registerCustomer(String firstname, String surname, String email, String password);
 	
