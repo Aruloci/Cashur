@@ -25,7 +25,7 @@ public class CategoryBean implements CategoryBeanLocal {
 	public void addCategory(Category category, User user) {
 		category.setUser(user);
 		
-		if (!isAlreadyExisting(this.getAllCategories(user), category)) {
+		if (!isAlreadyExisting(this.getAllCategories(user), category, user)) {
 			em.persist(category);
 			System.out.println("Category '" + category.getCategory() + "' added!");
 		} else {
@@ -58,10 +58,12 @@ public class CategoryBean implements CategoryBeanLocal {
 		return categories;
 	}
 	
-	private boolean isAlreadyExisting(List<Category> categories, Category newCat) {
+	private boolean isAlreadyExisting(List<Category> categories, Category newCat, User user) {
 		for (Category cat : categories) {
 			if (cat.getCategory().toLowerCase().equals(newCat.getCategory().toLowerCase())) {
-				return true;
+				if (cat.getUser().getID_User() == user.getID_User()) {
+					return true;
+				}
 			}
 		}
 		return false;
