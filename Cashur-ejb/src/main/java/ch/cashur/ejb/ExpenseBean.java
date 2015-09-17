@@ -4,20 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
-import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.servlet.http.HttpSession;
 
 import ch.cashur.model.Category;
 import ch.cashur.model.Expense;
+import ch.cashur.model.User;
 
 @Stateless
 public class ExpenseBean implements ExpenseBeanLocal {
 
-	FacesContext facesContext = FacesContext.getCurrentInstance();
-    HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
-	
 	@PersistenceContext
 	EntityManager em;
 
@@ -45,5 +41,26 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	@Override
 	public void addExpense(Expense expense) {
 		em.persist(expense);
+	}
+
+	@Override
+	public List<Expense> getAllExpenses(User user) {
+		List<Expense> expenseList = this.getAllExpenses();
+		List<Expense> result = new ArrayList<Expense>();
+		
+		for (Expense existingExp : expenseList) {
+			if (existingExp.getCategory().getUser().getID_User() == user.getID_User()) {
+				result.add(existingExp);
+			}
+		}
+		return result;
+	}
+
+	@Override
+	public List<Expense> getAllExpenses() {
+		List<Expense> expenseList = new ArrayList<Expense>();
+		expenseList = em.createNamedQuery("Expense.findAll", Expense.class).getResultList();
+		
+		return expenseList;
 	}
 }

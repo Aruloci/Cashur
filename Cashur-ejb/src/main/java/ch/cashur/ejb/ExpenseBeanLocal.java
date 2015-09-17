@@ -1,8 +1,11 @@
 package ch.cashur.ejb;
 
+import java.util.List;
+
 import javax.ejb.Local;
 
 import ch.cashur.model.Expense;
+import ch.cashur.model.User;
 
 @Local
 public interface ExpenseBeanLocal {
@@ -19,4 +22,17 @@ public interface ExpenseBeanLocal {
 	 * @param expense
 	 */
 	public void addExpense(Expense expense);
+	
+	/**
+	 * Gibt eine Liste der Ausgaben des Benutzers zurück
+	 * @param user
+	 * @return
+	 */
+	public List<Expense> getAllExpenses(User user);
+	
+	/**
+	 * Gibt eine Liste aller Ausgaben zurück
+	 * @return
+	 */
+	public List<Expense> getAllExpenses();
 }
