@@ -3,13 +3,12 @@ package ch.cashur.model;
 import java.io.Serializable;
 import javax.persistence.*;
 
-
 /**
  * The persistent class for the expense database table.
  * 
  */
 @Entity
-@NamedQuery(name="Expense.findAll", query="SELECT e FROM Expense e")
+@NamedQuery(name = "Expense.findAll", query = "SELECT e FROM Expense e")
 public class Expense implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -20,12 +19,10 @@ public class Expense implements Serializable {
 
 	private String wert;
 
-	//bi-directional many-to-one association to Category
+	// bi-directional many-to-one association to Category
 	@ManyToOne
-	@JoinColumns({
-		@JoinColumn(name="CATEGORY_ID_Category", referencedColumnName="ID_Category"),
-		@JoinColumn(name="CATEGORY_USER_ID", referencedColumnName="USER_ID")
-		})
+	@JoinColumns({ @JoinColumn(name = "CATEGORY_ID_Category", referencedColumnName = "ID_Category"),
+			@JoinColumn(name = "CATEGORY_USER_ID", referencedColumnName = "USER_ID") })
 	private Category category;
 
 	public Expense() {
