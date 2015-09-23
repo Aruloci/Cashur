@@ -1,6 +1,9 @@
 package ch.cashur.ejb;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -17,6 +20,9 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	@PersistenceContext
 	EntityManager em;
 
+	 DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	 Calendar cal = Calendar.getInstance();
+	
 	@Override
 	public void addExpense(String categoryName, String value) {
 		List<Category> categoryList = new ArrayList<Category>();
@@ -32,7 +38,7 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		}
 		expense.setWert(value);
 		expense.setCategory(cat);
-		expense.setDate("Jetzt");
+		expense.setDate(dateFormat.format(cal.getTime()));
 		
 		System.out.println("ExpenseBean >> Persist expense");
 		this.addExpense(expense);
