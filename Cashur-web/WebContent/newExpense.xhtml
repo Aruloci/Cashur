@@ -18,15 +18,16 @@
 				<div class="col-lg-10" style="width: 100%;">
 					<label for="categorySelect" class="control-label">Category</label>
 					<h:selectOneMenu value="#{expenseController.category}" class="form-control theme-input" id="categorySelect">
+						<f:selectItem itemDisabled="true" itemValue="" itemLabel="Select a category" />			
 						<c:forEach items="#{categoryController.getAllCategories()}" var="category">
-							<f:selectItem itemValue="#{category}" itemLabel="#{category}" />
+							<f:selectItem itemValue="#{category.category}" itemLabel="#{category.category}" />
 						</c:forEach>
 					</h:selectOneMenu>
 				</div>
 
 				<div class="col-lg-10" style="width: 100%;">
 					<label for="inputPrice" class="control-label">Price</label>
-					<h:inputText value="#{expenseController.value}" type="number" class="form-control theme-input" id="inputPrice"></h:inputText>
+					<h:inputText value="#{expenseController.value}" type="number" converter="javax.faces.Double" class="form-control theme-input" id="inputPrice"></h:inputText>
 				</div>
 			</div>
 			<div class="form-group">

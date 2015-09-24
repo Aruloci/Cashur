@@ -24,7 +24,7 @@ public class CategoryBean implements CategoryBeanLocal {
 	@Override
 	public void addCategory(Category category, User user) {
 		category.setUser(user);
-		
+
 		if (!isAlreadyExisting(this.getAllCategories(user), category, user)) {
 			em.persist(category);
 			System.out.println("Category '" + category.getCategory() + "' added!");

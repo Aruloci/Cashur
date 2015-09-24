@@ -18,7 +18,8 @@ import ch.cashur.model.User;
 public class CategoryController implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private String category;	
+	private String category;
+	private String color;
 	
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
@@ -29,16 +30,17 @@ public class CategoryController implements Serializable {
 	public void addCategory() {
 		Category cat = new Category();
 		cat.setCategory(category);
+		cat.setColor(color);
 		
 		categoryBeanLocal.addCategory(cat);
 	}
 
-	public List<String> getAllCategories() {
-		List<String> strings = new ArrayList<String>();
+	public List<Category> getAllCategories() {
+		List<Category> categories = new ArrayList<Category>();
 		for(Category c : categoryBeanLocal.getAllCategories((User) session.getAttribute("user"))) {
-			strings.add(c.getCategory());
+			categories.add(c);
 		}
-		return strings;
+		return categories;
 	}
 	
 	/* GETTERS and SETTERS */
@@ -48,5 +50,13 @@ public class CategoryController implements Serializable {
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 }

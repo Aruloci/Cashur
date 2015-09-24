@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
 <ui:include src="head.xhtml" />
@@ -64,19 +65,15 @@ window.onload= function(){
 	<hr class="theme-hr"></hr>
 	<div id="doughnutChart" class="chart"></div>
 	<script>
-		$("#doughnutChart").drawDoughnutChart([ {
-			title : "Sport",
-			value : 519.95,
-			color : "#1fad5c"
-		}, {
-			title : "Food",
-			value : 320,
-			color : "#f5f5f5"
-		}, {
-			title : "Pets",
-			value : 212.10,
-			color : "#A7FF18"
-		} ]);
+	$("#doughnutChart").drawDoughnutChart([
+	<c:forEach items="#{categoryController.getAllCategories()}" var="category">	
+		{title : "#{category.category}",
+			value : #{expenseController.getTotal(category.category)},
+			color : "#{category.color}"
+		}, 
+	</c:forEach>
+		]);
+
 	</script>
 
 	<br></br>
