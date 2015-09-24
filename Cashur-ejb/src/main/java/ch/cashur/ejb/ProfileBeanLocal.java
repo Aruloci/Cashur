@@ -17,4 +17,10 @@ public interface ProfileBeanLocal {
 	 * @param confirmPassword
 	 */
 	public void changePassword(String password, String confirmPassword);
+	
+	/**
+	 * Changes the existing currency
+	 * @param currency
+	 */
+	public void changeCurrency(String currency);
 }

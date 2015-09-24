@@ -39,5 +39,13 @@ public class ProfileBean implements ProfileBeanLocal {
 		}
 	}
 	
+	@Override
+	public void changeCurrency(String currency) {
+		em.createQuery("UPDATE User SET currency = '" + currency + "' WHERE ID_User =" + user.getID_User()).executeUpdate();
+		user.setCurrency(currency);
+		session.setAttribute("user", user);
+		System.out.println("JAAA CURRENCY");
+	}
+	
     
 }
