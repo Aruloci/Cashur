@@ -24,13 +24,12 @@
 							<input class="form-control theme-input" id="currentMail" value="#{sessionScope.user.email}" disabled=""></input>
 							
 							<label for="newEmail" class="control-label">New E-Mail</label>
-							<h:inputText type="email" class="form-control theme-input" id="newEmail"></h:inputText>
+							<h:inputText value="#{profileController.email}" type="email" class="form-control theme-input" id="newEmail"></h:inputText>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-lg-10" style="width: 100%;">
-							<h:commandButton class="btn btn-primary capitalize"
-								style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;" value="Change E-Mail"></h:commandButton>
+							<h:commandButton  action="#{profileController.changeEmail}" class="btn btn-primary capitalize" style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;" value="Change E-Mail"></h:commandButton>
 						</div>
 					</div>
 				</div>
@@ -48,19 +47,18 @@
 					<div class="form-group">
 						<div class="col-lg-10" style="width: 100%;">
 							<label for="oldPassword" class="control-label">Old Password</label>
-							<h:inputSecret class="form-control theme-input" id="oldPassword"></h:inputSecret>
+							<h:inputSecret value="#{profileController.oldPassword}" class="form-control theme-input" id="oldPassword"></h:inputSecret>
 							
 							<label for="newPassword" class="control-label">New Password</label>
-							<h:inputSecret class="form-control theme-input" id="newPassword"></h:inputSecret>
+							<h:inputSecret value="#{profileController.password}" class="form-control theme-input" id="newPassword"></h:inputSecret>
 							
 							<label for="newConfirmPassword" class="control-label">Confirm New Password</label>
-							<h:inputSecret class="form-control theme-input" id="newConfirmPassword"></h:inputSecret>
+							<h:inputSecret value="#{profileController.confirmPassword}" class="form-control theme-input" id="newConfirmPassword"></h:inputSecret>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="col-lg-10" style="width: 100%;">
-							<h:commandButton class="btn btn-primary capitalize"
-								style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;" value="Change Password"></h:commandButton>
+							<h:commandButton action="#{profileController.changePassword}" class="btn btn-primary capitalize" style="width: 100%; background-color: #1fad5c; border-color: #f5f5f5;" value="Change Password"></h:commandButton>
 						</div>
 					</div>
 				</div>
