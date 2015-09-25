@@ -1,4 +1,4 @@
-package ch.cashur.web.controllers;
+ package ch.cashur.web.controllers;
 
 import java.io.Serializable;
 import java.util.List;
@@ -8,8 +8,6 @@ import javax.enterprise.context.RequestScoped;
 import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
-
-import org.eclipse.persistence.internal.oxm.record.deferred.EndEntityEvent;
 
 import ch.cashur.ejb.ExpenseBeanLocal;
 import ch.cashur.model.Expense;
@@ -23,19 +21,19 @@ public class ExpenseController implements Serializable {
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);	    
     
 	@EJB
-	ExpenseBeanLocal expense;
+	ExpenseBeanLocal expenseBeanLocal;
 	
 	private String category = "";
 	private String value = "";
 	private Double total = 0.0;
 	
 	public void addExpense() {
-		expense.addExpense(category, value);
+		expenseBeanLocal.addExpense(category, value);
 	}
 		
 	public Double getTotal(String category) {
 		User user = (User) session.getAttribute("user");
-		List<Expense> expenses = expense.getAllExpenses(user);
+		List<Expense> expenses = expenseBeanLocal.getAllExpenses(user);
 		total = 0.0;
 		System.out.println(category);
 		
@@ -54,13 +52,17 @@ public class ExpenseController implements Serializable {
 	
 	public List<Expense> showLatestExpenses() {
 		User user = (User) session.getAttribute("user");
-		int size = expense.getAllExpenses().size();
+		int size = expenseBeanLocal.getAllExpenses().size();
 		
 		if(size < 5) {
-			return expense.showLatestExpenses(user, size);
+			return expenseBeanLocal.showLatestExpenses(user, size);
 		}
 		
-		return expense.showLatestExpenses(user, 5);
+		return expenseBeanLocal.showLatestExpenses(user, 5);
+	}
+	
+	public void testMethod() {
+		expenseBeanLocal.getAllExpensesOfYear();
 	}
 	
 	public String getCategory() {

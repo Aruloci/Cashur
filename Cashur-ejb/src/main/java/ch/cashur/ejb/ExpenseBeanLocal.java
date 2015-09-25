@@ -1,6 +1,7 @@
 package ch.cashur.ejb;
 
 import java.util.List;
+import java.util.TreeMap;
 
 import javax.ejb.Local;
 
@@ -37,9 +38,18 @@ public interface ExpenseBeanLocal {
 	public List<Expense> getAllExpenses();
 	
 	/**
-	 * Gibt die letzten 5 Ausgaben aus
+	 * Gibt die letzten Ausgaben zurück
 	 * @return
 	 */
-	
 	public List<Expense> showLatestExpenses(User user, int amount);
+	
+	/**
+	 * Gibt eine Liste aller Ausgaben des
+	 * aktuellen Monates zurück
+	 * @return
+	 */
+	public List<Expense> getAllExpensesOfCurrentMonth();
+	
+	
+	public TreeMap<Integer, TreeMap<String, TreeMap<Integer, List<Expense>>>> getAllExpensesOfYear();
 }
