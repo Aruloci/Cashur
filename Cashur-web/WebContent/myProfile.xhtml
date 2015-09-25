@@ -10,7 +10,7 @@
 <title>Cashur | Profile</title>
 </head>
 <h:body>
-<c:if test="#{session.getAttribute('isLoggedIn') == false}">
+<c:if test="#{session.getAttribute('isLoggedIn') != true}">
 	<h3>You must be logged in to access this page. Return to <a href="login.jsf">Login</a>.</h3>
 </c:if>
 
