@@ -71,10 +71,20 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	}
 
 	@Override
-	public List<Expense> showLatestExpenses(int amount) {
+	public List<Expense> showLatestExpenses(User user, int amount) {
 		List<Expense> expenseList = new ArrayList<Expense>();
-		expenseList = em.createQuery("SELECT e FROM Expense e ORDER BY e.id DESC", Expense.class).getResultList().subList(0, 5);
-	
+		expenseList = em.createQuery("SELECT e FROM Expense e WHERE e.id.categoryUserId = " + user.getID_User() + " ORDER BY e.id DESC", Expense.class).getResultList();
+		
+		if(expenseList != null && expenseList.size() < 5) {
+			expenseList = expenseList.subList(0, expenseList.size());
+		}
+		else if(expenseList.size() >= 5) {
+			expenseList = expenseList.subList(0, 5);
+		} else {
+			System.out.println("Keine einträge im Array");
+		}
+		
+		
 		return expenseList;
 	}
 }

@@ -41,5 +41,5 @@ public interface ExpenseBeanLocal {
 	 * @return
 	 */
 	
-	public List<Expense> showLatestExpenses(int amount);
+	public List<Expense> showLatestExpenses(User user, int amount);
 }

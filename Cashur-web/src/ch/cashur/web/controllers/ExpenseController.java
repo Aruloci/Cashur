@@ -9,6 +9,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.servlet.http.HttpSession;
 
+import org.eclipse.persistence.internal.oxm.record.deferred.EndEntityEvent;
+
 import ch.cashur.ejb.ExpenseBeanLocal;
 import ch.cashur.model.Expense;
 import ch.cashur.model.User;
@@ -18,8 +20,8 @@ import ch.cashur.model.User;
 public class ExpenseController implements Serializable {
 	private static final long serialVersionUID = 7352375610517201651L;
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
-    private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);	
-	
+    private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);	    
+    
 	@EJB
 	ExpenseBeanLocal expense;
 	
@@ -51,7 +53,14 @@ public class ExpenseController implements Serializable {
 	}
 	
 	public List<Expense> showLatestExpenses() {
-		return expense.showLatestExpenses(5);
+		User user = (User) session.getAttribute("user");
+		int size = expense.getAllExpenses().size();
+		
+		if(size < 5) {
+			return expense.showLatestExpenses(user, size);
+		}
+		
+		return expense.showLatestExpenses(user, 5);
 	}
 	
 	public String getCategory() {

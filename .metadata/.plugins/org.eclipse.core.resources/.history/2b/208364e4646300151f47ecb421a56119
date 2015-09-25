@@ -117,11 +117,6 @@ window.onload= function(){
 		<c:if
 			test="#{expenseController.showLatestExpenses().isEmpty() == true}">
 			<div class="panel panel-default">
-			<div class="panel-heading">
-			Latest Expenses <a href="newExpense.jsf"
-				style="float: right; color: #1fad5c;"> <span
-				class="glyphicon glyphicon-plus"></span></a>
-		</div>		
 				<div class="panel-heading">Latest Expenses</div>
 				<div class="panel-body">There are no expenses</div>
 			</div>
