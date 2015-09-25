@@ -50,6 +50,10 @@ public class ExpenseController implements Serializable {
 		return total;
 	}
 	
+	public List<Expense> showLatestExpenses() {
+		return expense.showLatestExpenses(5);
+	}
+	
 	public String getCategory() {
 		return category;
 	}

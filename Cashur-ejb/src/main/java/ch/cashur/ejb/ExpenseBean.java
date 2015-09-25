@@ -20,7 +20,7 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	@PersistenceContext
 	EntityManager em;
 
-	 DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 	 Calendar cal = Calendar.getInstance();
 	
 	@Override
@@ -67,6 +67,14 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		List<Expense> expenseList = new ArrayList<Expense>();
 		expenseList = em.createNamedQuery("Expense.findAll", Expense.class).getResultList();
 		
+		return expenseList;
+	}
+
+	@Override
+	public List<Expense> showLatestExpenses(int amount) {
+		List<Expense> expenseList = new ArrayList<Expense>();
+		expenseList = em.createQuery("SELECT e FROM Expense e ORDER BY e.id DESC", Expense.class).getResultList().subList(0, 5);
+	
 		return expenseList;
 	}
 }

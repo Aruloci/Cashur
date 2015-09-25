@@ -67,7 +67,8 @@ window.onload= function(){
 	<script>
 	$("#doughnutChart").drawDoughnutChart([
 	<c:forEach items="#{categoryController.getAllCategories()}" var="category">	
-		{title : "#{category.category}",
+		{
+			title : "#{category.category}",
 			value : #{expenseController.getTotal(category.category)},
 			color : "#{category.color}"
 		}, 
@@ -95,33 +96,17 @@ window.onload= function(){
 						<th>Price</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>09.11.2015</td>
-						<td>Sport</td>
-						<td>519.95 <a href="myExpenses.jsf" style="float: right;"><span
-								class="glyphicon glyphicon-trash" style="color: #1fad5c;"></span></a>
-						</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<td>11.11.2015</td>
-						<td>Pets</td>
-						<td>212.10 <a href="myExpenses.jsf" style="float: right;"><span
-								class="glyphicon glyphicon-trash" style="color: #1fad5c;"></span></a>
-						</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<td>12.11.2015</td>
-						<td>Food</td>
-						<td>320.00 <a href="myExpenses.jsf" style="float: right;"><span
-								class="glyphicon glyphicon-trash" style="color: #1fad5c;"></span></a>
-						</td>
-					</tr>
-				</tbody>
+				<c:forEach items="#{expenseController.showLatestExpenses()}" var="expense">
+					<tbody>
+						<tr>
+							<td>#{expense.date}</td>
+							<td>#{expense.category.category}</td>
+							<td>#{expense.wert} 
+							<a href="myExpenses.jsf" style="float: right;"><span class="glyphicon glyphicon-trash" style="color: #1fad5c;"></span></a>
+							</td>
+						</tr>
+					</tbody>
+				</c:forEach>
 			</table>
 		</div>
 	</div>

@@ -35,4 +35,11 @@ public interface ExpenseBeanLocal {
 	 * @return
 	 */
 	public List<Expense> getAllExpenses();
+	
+	/**
+	 * Gibt die letzten 5 Ausgaben aus
+	 * @return
+	 */
+	
+	public List<Expense> showLatestExpenses(int amount);
 }

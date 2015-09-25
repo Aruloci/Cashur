@@ -18,6 +18,7 @@ public class ProfileController implements Serializable {
 	private String password;
 	private String confirmPassword;
 	private String email;
+	private String currency;
 	
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);	
@@ -27,15 +28,21 @@ public class ProfileController implements Serializable {
 	
 	public void changePassword() {
 		User user = (User) session.getAttribute("user");
+		
 		if(oldPassword.equals(user.getPassword())) {
 			profileBeanLocal.changePassword(password, confirmPassword);
 		} else {
 			System.out.println("Old Password incorrect");
 		}
 	}
-	
+		
 	public void changeEmail() {
 		profileBeanLocal.changeMail(email);
+	}
+	
+	public void changeCurrency() {
+		System.out.println("Currency Profile: " + currency);
+		profileBeanLocal.changeCurrency(currency);
 	}
 
 	public String getPassword() {
@@ -68,5 +75,13 @@ public class ProfileController implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getCurrency() {
+		return currency;
+	}
+
+	public void setCurrency(String currency) {
+		this.currency = currency;
 	}
 }
