@@ -10,6 +10,11 @@
 <title>Cashur | New Expense</title>
 </head>
 <h:body>
+<c:if test="#{session.getAttribute('isLoggedIn') == false}">
+	<h3>You must be logged in to access this page. Return to <a href="login.jsf">Login</a>.</h3>
+</c:if>
+
+<c:if test="#{session.getAttribute('isLoggedIn') == true}">
 	<h:form class="form-horizontal registerbox">
 		<fieldset>
 			<legend>New Expense</legend>
@@ -37,5 +42,6 @@
 			</div>
 		</fieldset>
 	</h:form>
+	</c:if>
 </h:body>
 </html>

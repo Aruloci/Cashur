@@ -9,6 +9,11 @@
 <title>Cashur | Profile</title>
 </head>
 <h:body>
+<c:if test="#{session.getAttribute('isLoggedIn') == false}">
+	<h3>You must be logged in to access this page. Return to <a href="login.jsf">Login</a>.</h3>
+</c:if>
+
+<c:if test="#{session.getAttribute('isLoggedIn') == true}">
 	<h1 style="text-align: center;">Profile</h1>
 	<hr class="theme-hr"></hr>
 
@@ -96,5 +101,6 @@
 		</h:form>
 		</div>
 	</div>
+	</c:if>
 </h:body>
 </html>

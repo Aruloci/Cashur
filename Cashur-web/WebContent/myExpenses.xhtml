@@ -61,6 +61,11 @@ window.onload= function(){
 </script>
 
 <h:body>
+<c:if test="#{session.getAttribute('isLoggedIn') == false}">
+	<h3>You must be logged in to access this page. Return to <a href="login.jsf">Login</a>.</h3>
+</c:if>
+
+<c:if test="#{session.getAttribute('isLoggedIn') == true}">
 	<h1 style="text-align: center;">Expenses</h1>
 	<hr class="theme-hr"></hr>
 	<div id="doughnutChart" class="chart"></div>
@@ -213,5 +218,6 @@ window.onload= function(){
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
+</c:if>
 </h:body>
 </html>
