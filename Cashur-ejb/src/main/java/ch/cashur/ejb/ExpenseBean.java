@@ -4,11 +4,15 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.TreeMap;
 
 import javax.ejb.Stateless;
+import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.servlet.http.HttpSession;
 
 import ch.cashur.model.Category;
 import ch.cashur.model.Expense;
@@ -20,8 +24,11 @@ public class ExpenseBean implements ExpenseBeanLocal {
 	@PersistenceContext
 	EntityManager em;
 
-	 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-	 Calendar cal = Calendar.getInstance();
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+	Calendar calendar = Calendar.getInstance();
+	
+	private FacesContext facesContext = FacesContext.getCurrentInstance();
+    private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
 	
 	@Override
 	public void addExpense(String categoryName, String value) {
@@ -38,7 +45,7 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		}
 		expense.setWert(value);
 		expense.setCategory(cat);
-		expense.setDate(dateFormat.format(cal.getTime()));
+		expense.setDate(dateFormat.format(calendar.getTime()));
 		
 		System.out.println("ExpenseBean >> Persist expense");
 		this.addExpense(expense);
@@ -54,6 +61,10 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		List<Expense> expenseList = this.getAllExpenses();
 		List<Expense> result = new ArrayList<Expense>();
 		
+		if (user == null) {
+			user = (User) session.getAttribute("user");
+		}
+		
 		for (Expense existingExp : expenseList) {
 			if (existingExp.getCategory().getUser().getID_User() == user.getID_User()) {
 				result.add(existingExp);
@@ -61,9 +72,17 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		}
 		return result;
 	}
+	
+	public List<Category> getAllKategories(User user) {
+		if (user == null) {
+			user = (User) session.getAttribute("user");
+		}
+		return user.getCategories();
+	}
 
 	@Override
 	public List<Expense> getAllExpenses() {
+		
 		List<Expense> expenseList = new ArrayList<Expense>();
 		expenseList = em.createNamedQuery("Expense.findAll", Expense.class).getResultList();
 		
@@ -86,5 +105,128 @@ public class ExpenseBean implements ExpenseBeanLocal {
 		
 		
 		return expenseList;
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	public TreeMap<Integer, TreeMap<String, TreeMap<Integer, List<Expense>>>> getAllExpensesOfYear() {
+		// Listen für Resultat
+		TreeMap<Integer, TreeMap<String, TreeMap<Integer, List<Expense>>>> years = new TreeMap<Integer, TreeMap<String, TreeMap<Integer, List<Expense>>>>();
+		// TreeMap<String, TreeMap<Integer, List<Expense>>> categories = new
+		// TreeMap<String, TreeMap<Integer, List<Expense>>>();
+		// TreeMap<Integer, List<Expense>> months = new TreeMap<Integer,
+		// List<Expense>>();
+		// List<Expense> expenses = new ArrayList<Expense>();
+
+		// Kategorieren des Benutzers
+		List<Category> categoryList = new ArrayList<Category>();
+		categoryList = this.getAllKategories(null);
+
+		// Monate als Zahlen beginnend bei 0
+		int[] monthInt = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+
+		TreeMap<String, TreeMap<Integer, List<Expense>>> categories = new TreeMap<String, TreeMap<Integer, List<Expense>>>();
+		for (Category category : categoryList) {
+			TreeMap<Integer, List<Expense>> months = new TreeMap<Integer, List<Expense>>();
+
+			for (int i : monthInt) {
+				List<Expense> expenses = new ArrayList<Expense>();
+
+				for (Expense expense : category.getExpenses()) {
+					Date expenseDate = this.stringToDate(expense.getDate());
+
+					if (expenseDate.getMonth() == i) {
+						expenses.add(expense);
+					}
+				}
+				months.put(i, expenses);
+
+				if (months.get(i).isEmpty()) {
+					Expense fakeExp = new Expense();
+					fakeExp.setWert("0");
+
+					months.get(i).add(fakeExp);
+				}
+			}
+			categories.put(category.getCategory(), months);
+		}
+
+		// if (years.containsKey(expenseDate.getYear())) {
+		// if (categories.containsKey(expense.getCategory().getCategory())) {
+		// if (months.containsKey(expenseDate.getMonth())) {
+		// if (expenses.contains(expense)) {
+		// // Alles bereits vorhanden -> nichts tun
+		// } else {
+		// expenses.add(expense);
+		// }
+		// } else {
+		// expenses.add(expense);
+		// months.put(expenseDate.getMonth(), expenses);
+		// }
+		// } else {
+		// expenses.add(expense);
+		// months.put(expenseDate.getMonth(), expenses);
+		// categories.put(expense.getCategory().getCategory(), months);
+		// }
+		// } else {
+		// expenses.add(expense);
+		// months.put(expenseDate.getMonth(), expenses);
+		// categories.put(expense.getCategory().getCategory(), months);
+		// years.put(expenseDate.getYear(), categories);
+		// }
+		// }
+
+		// System.out.println("Jahre: " + years.size());
+		// System.out.println("Kategorien: " + categories.size());
+		// System.out.println("Monate: " + months.size());
+		// System.out.println("Expenses: " + expenses.size());
+
+		
+		// categories werden nicht zu years hinzugefügt
+		System.out.println(years.get(2016).get("Food").get(10).get(0).getWert());
+		System.out.println("Expected: 12");
+
+		return years;
+	}
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	public List<Expense> getAllExpensesOfCurrentMonth() {
+		List<Expense> expenseList = new ArrayList<Expense>();
+		expenseList = this.getAllExpenses(null);
+		List<Expense> result = new ArrayList<Expense>();
+
+		for (Expense expense : expenseList) {
+			Date expCal = this.stringToDate(expense.getDate());
+			if (expCal.getYear() == this.getCurrentYear()) {
+				if (expCal.getMonth() == this.getCurrentMonth()) {
+					result.add(expense);
+				}
+			}
+		}
+
+		return result;
+	}
+	
+	@SuppressWarnings("deprecation")
+	private Date stringToDate(String oldCal) {
+		Date newDate = new Date();
+
+		newDate.setYear(new Integer(oldCal.substring(0, 4)));
+		newDate.setMonth(new Integer(oldCal.substring(5, 7)));
+
+		System.out.println(new Integer(oldCal.substring(0, 4)));
+		System.out.println(newDate.getYear());
+		System.out.println(newDate.getMonth());
+
+		return newDate;
+	}
+	
+	private int getCurrentMonth() {
+		return calendar.get(Calendar.MONTH) + 1;
+	}
+
+	private int getCurrentYear() {
+		return calendar.get(Calendar.YEAR);
 	}
 }
