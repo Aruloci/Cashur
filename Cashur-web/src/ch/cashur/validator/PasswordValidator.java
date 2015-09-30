@@ -26,7 +26,7 @@ public class PasswordValidator implements Validator {
 		}
 
 		if (password.length() > 16) {
-			FacesContext.getCurrentInstance();
+			FacesContext.getCurrentInstance().addMessage("hallowelt",new FacesMessage("test:password", "please"));
 		} else if (password.length() < 4 || password.equals(null)) {
 			validate = true;
 			new FacesMessage("Passwort zu kurz.");
