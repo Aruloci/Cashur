@@ -21,6 +21,8 @@ public class Category implements Serializable {
 
 	private String color;
 
+	private String creationDate;
+
 	//bi-directional many-to-one association to User
 	@ManyToOne
 	@JoinColumn(name="USER_ID")
@@ -55,6 +57,14 @@ public class Category implements Serializable {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	public String getCreationDate() {
+		return this.creationDate;
+	}
+
+	public void setCreationDate(String creationDate) {
+		this.creationDate = creationDate;
 	}
 
 	public User getUser() {

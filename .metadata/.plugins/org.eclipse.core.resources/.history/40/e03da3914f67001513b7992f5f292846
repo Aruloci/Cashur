@@ -37,9 +37,11 @@ public class ExpenseController implements Serializable {
 		total = 0.0;
 		
 		for (Expense e : expenses) {
-			if (e.getWert() != null 
+			System.out.println(e.getCategory().getCategory() + ": " + e.getWert());
+			if ( e.getWert() != null 
 				 && !e.getWert().equals("") 
-				 && e.getCategory().getCategory().equals(category)) {
+				 && e.getCategory().getCategory().equals(category)
+			) {
 				total += Double.parseDouble(e.getWert());
 			}
 		}

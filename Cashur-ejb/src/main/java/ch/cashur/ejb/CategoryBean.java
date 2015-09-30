@@ -1,7 +1,12 @@
 package ch.cashur.ejb;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.ejb.Stateless;
 import javax.faces.context.FacesContext;
@@ -14,6 +19,7 @@ import ch.cashur.model.User;
 
 @Stateless
 public class CategoryBean implements CategoryBeanLocal {
+	private static final Logger LOG = Logger.getLogger(CategoryBean.class.getName());
 	
 	@PersistenceContext
 	EntityManager em;
@@ -21,16 +27,20 @@ public class CategoryBean implements CategoryBeanLocal {
 	private FacesContext facesContext = FacesContext.getCurrentInstance();
     private HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(false);
 
+    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+	Calendar calendar = Calendar.getInstance();
+    
 	@Override
 	public void addCategory(Category category, User user) {
 		category.setUser(user);
+		category.setCreationDate(dateFormat.format(calendar.getTime()));
 
 		if (!isAlreadyExisting(this.getAllCategories(user), category, user)) {
 			em.persist(category);
-			System.out.println("Category '" + category.getCategory() + "' added!");
+			LOG.log(Level.INFO, "Kategorie '" + category.getCategory() + "' von '" + user.getEmail() + "' erstellt", category.getCategory());
 		} else {
-			//TODO
-			System.out.println("Kategorie vorhanden!");
+			//TODO Feedback geben
+			LOG.log(Level.INFO, "Kategorie '" + category.getCategory() + "' vorhanden", category.getCategory());
 		}
 	}
 

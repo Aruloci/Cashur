@@ -35,11 +35,14 @@ public class ExpenseController implements Serializable {
 		User user = (User) session.getAttribute("user");
 		List<Expense> expenses = expenseBeanLocal.getAllExpenses(user);
 		total = 0.0;
+		System.out.println(category);
 		
 		for (Expense e : expenses) {
-			if (e.getWert() != null 
+			System.out.println(e.getCategory().getCategory() + ": " + e.getWert());
+			if ( e.getWert() != null 
 				 && !e.getWert().equals("") 
-				 && e.getCategory().getCategory().equals(category)) {
+				 && e.getCategory().getCategory().equals(category)
+			) {
 				total += Double.parseDouble(e.getWert());
 			}
 		}
