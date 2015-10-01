@@ -10,15 +10,16 @@ import javax.inject.Named;
 
 @Named
 @RequestScoped
-@FacesValidator("emailValidator")
-public class EmailValidator implements Validator {
+@FacesValidator("hiddenEmailValidator")
+public class HiddenEmailValidator implements Validator {
 
 	@Override
 	public void validate(FacesContext context, UIComponent component, Object value) {
 		String email = (String) value;		
 		
 		if(!email.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$")) {
-			FacesContext.getCurrentInstance().addMessage("registerForm:email", new FacesMessage("Please enter a valid email"));
+			FacesContext.getCurrentInstance().addMessage("loginForm:email", new FacesMessage("Please enter a valid email"));
+			System.out.println("Login mail wrong");
 		}
 	}
 }

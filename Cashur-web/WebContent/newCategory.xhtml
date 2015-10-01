@@ -11,19 +11,23 @@
 	<title>Cashur | New Category</title>
 </head>
 <h:body>
-<c:if test="#{session.getAttribute('isLoggedIn') == false}">
+<c:if test="#{session.getAttribute('isLoggedIn') != true}">
 	<h3>You must be logged in to access this page. Return to <a href="login.jsf">Login</a>.</h3>
 </c:if>
 
 <c:if test="#{session.getAttribute('isLoggedIn') == true}">
-<h:form class="form-horizontal registerbox"  method="post">
+<h:form id="categoryForm" class="form-horizontal registerbox"  method="post">
   <fieldset>
     <legend>New Category</legend>
     <div class="form-group">
       
       <div class="col-lg-10" style="width: 100%;">
-      	<label for="inputCategory" class="control-label">Category Name</label>
-        <h:inputText value="#{categoryController.category}" class="form-control theme-input" id="inputCategory"></h:inputText>
+      	<label for="category" class="control-label">Category Name</label>
+      	<h:message id="m_category" for="category" style="color:red; float:right;"></h:message>
+        <h:inputText value="#{categoryController.category}" class="form-control theme-input" id="category" binding="#{category}">
+        	<f:validator validatorId="categoryValidator" />
+			<f:ajax event="keyup" execute="category" render="m_category" />
+        </h:inputText>
 	   	<label for="inputCategory" class="control-label">Category Color</label>
 	  	<br></br>
 	   	<ui:include src="colorpicker.xhtml" /> 

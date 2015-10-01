@@ -15,11 +15,10 @@
 </c:if>
 
 <c:if test="#{session.getAttribute('isLoggedIn') == true}">
-	<h:form class="form-horizontal registerbox">
+	<h:form id="expenseForm" class="form-horizontal registerbox">
 		<fieldset>
 			<legend>New Expense</legend>
 			<div class="form-group">
-
 				<div class="col-lg-10" style="width: 100%;">
 					<label for="categorySelect" class="control-label">Category</label>
 					<h:selectOneMenu value="#{expenseController.category}" class="form-control theme-input" id="categorySelect">
@@ -31,8 +30,12 @@
 				</div>
 
 				<div class="col-lg-10" style="width: 100%;">
-					<label for="inputPrice" class="control-label">Price</label>
-					<h:inputText value="#{expenseController.value}" type="number" converter="javax.faces.Double" class="form-control theme-input" id="inputPrice"></h:inputText>
+					<label for="price" class="control-label">Price</label>
+					<h:message id="m_price" for="price" style="color:red; float:right;"></h:message>
+					<h:inputText value="#{expenseController.value}" type="number" class="form-control theme-input" id="price" binding="#{price}">
+						<f:validator validatorId="expenseValidator" />
+						<f:ajax event="keyup" execute="price" render="m_price" />
+					</h:inputText>
 				</div>
 			</div>
 			<div class="form-group">
