@@ -23,11 +23,22 @@ public class ExpenseController implements Serializable {
 	@EJB
 	ExpenseBeanLocal expenseBeanLocal;
 	
-	private String category = "";
-	private String value = "";
+	private String category = "0";
+	private String value = "0";
 	private Double total = 0.0;
 	
 	public void addExpense() {
+		
+		if(category == null || category.equals("")) {
+			category = "0";
+		}
+		
+		if(value == null || value.equals("")) {
+			value = "0";
+		} else if(value.matches("^[a-zA-Z]")) {
+			value = "0";
+		}
+		
 		expenseBeanLocal.addExpense(category, value);
 	}
 		

@@ -16,14 +16,17 @@ public class ExpenseValidator implements Validator {
 	@Override
 	public void validate(FacesContext context, UIComponent component, Object value) {
 		String price = (String) value;
-
+		
 		if (price == null || price.equals("")) {
 			FacesContext.getCurrentInstance().addMessage("expenseForm:price", new FacesMessage("Enter an expense"));
 		}
 		
 		if (price.length() > 45) {
 			FacesContext.getCurrentInstance().addMessage("expenseForm:price", new FacesMessage("Number is too big"));
-			System.out.println("Expense zu lang");
+		} 
+		
+		if (!price.matches("^[0-9]+")) {
+			FacesContext.getCurrentInstance().addMessage("expenseForm:price", new FacesMessage("Please enter numbers only"));
 		}
 	}
 }
